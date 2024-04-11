@@ -3,8 +3,9 @@ import '../styles/global.css';
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 
-const pageTitle = "Sobre mi";
+const pageTitle = "Sobre nossotros";
 
 const identity = {
   firstName: "Sarah",
@@ -29,10 +30,10 @@ const skillColor = "navy";
   </head>
   <body>
 
-    <Header />
+    <BaseLayout>
+      
 
-
-    <h1>Sobre mi</h1>
+    <h1>{pageTitle}</h1>
     <h2>... ¡y mi nuevo sitio Astro!</h2>
 
     <p>Estoy trabajando en el tutorial introductorio de Astro. Esta es la segunda página de mi sitio web, ¡y es la primera que he construido yo mismo!</p>
@@ -56,7 +57,7 @@ const skillColor = "navy";
 {finished && <p>¡He terminado este tutorial!</p>}
 
 {goal === 1 ? <p>Mi objetivo es terminar en 1 día.</p> : <p>Mi objetivo no son mas de 1 día.</p>}
-<Footer />
+</BaseLayout>
   </body>
 </html>
 
@@ -69,7 +70,4 @@ const skillColor = "navy";
     color: var(--skillColor);
     font-weight: bold;
   }
-    body{
-      background: gray;
-    }
   </style>
