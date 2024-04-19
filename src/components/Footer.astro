@@ -1,6 +1,8 @@
 ---
 import "../styles/global.css";
 import Social from "./Social.astro";
+import { Image } from 'astro:assets';
+import logo from '../Imagenes/Banner.png'
 
 const platform = "github";
 const username = "Jaumebr2001";
@@ -12,8 +14,8 @@ const username2 = "JBR2001";
     <div
         class="w-full mx-auto max-w-screen-xl p-4 flex items-center justify-around md:flex md:items-center md:justify-around mt-4"
     >
-    <img class="w-24 h-24 hidden md:block" src="https://flowbite.com/docs/images/logo.svg" alt="">
-        <span class="text-sm text-cuarto sm:text-center "
+    <Image src={logo} class="h-50 w-60" alt="El gato observador" />
+    <span class="text-sm text-yellow-300 sm:text-center "
             >© 2024 <a href="https://blog-arnau.netlify.app/" class="hover:underline"
                 >Blog Arnau™</a
             >. All Rights Reserved.

@@ -4,10 +4,10 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				primary: '#F0AD52', // Ejemplo de un color principal
-				secondary: '#2B0303', // Ejemplo de otro color
-				tercero: '#A76430', // Ejemplo de un tercer color
-				cuarto: '#F8FAE5',
+				primary: '#fff', // Ejemplo de un color principal
+				secondary: '#29333C', // Ejemplo de otro color
+				tercero: '#29333C', // Ejemplo de un tercer color
+				cuarto: '#061A23',
 				// Puedes agregar más colores según tus necesidades
 			  },
 		},

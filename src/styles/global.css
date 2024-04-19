@@ -4,19 +4,20 @@
   }
   
   h1 {
+    text-align: center;
     margin: 1rem 0;
     font-size: 2.5rem;
-    color: #2B0303;
+    color: #000;
   }
 
     body{
     margin: 0;
     width: 100%;
     line-height: 1.5;
-    background: #F0AD52;
+    background: #fff;
     }
 
     p{
-        color: #2B0303;
+        color: #000;
       }
     
